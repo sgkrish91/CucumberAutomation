@@ -45,5 +45,21 @@ public class MainSteps {
 	public void cards_are_displayed() {
 	    System.out.println("Card details are displayed correctly");
 	}
+	
+	@Given("Setup the entries in the database")
+	public void setupEntries() {
+		System.out.println("\n ***********************");
+		System.out.println("Setup the entries in database");
+	}
+	
+	@When("User launches the browser")
+	public void launchBrowser() {
+		System.out.println("User launches the browser");
+	}
+	
+	@When("User hits the homepage url of banking site")
+	public void hitHomePage() {
+		System.out.println("User hits the homepage url");
+	}
 
 }

@@ -28,6 +28,17 @@ Examples:
 	|	Username	|	|	Password	|
 	|	creditusr	|	|	abc123		|
 	|	debitusr	|	|	hello12		|
+	
+Scenario: User default sign up
+
+Given User is on the sign up page
+When User sign up in to the application
+	|	Hari	|
+	|	Krishnan	|
+	|	test@gmail.com	|
+	|	8547309562	|
+Then Home page is displayed
+And Cards are displayed
 
 
 
